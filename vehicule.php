@@ -33,8 +33,28 @@ class Vehicule{
             return $rival->nomVehicule;
         }
     }
+    public function getNom():?string{
+        return $this->nomVehicule;
+    }
+    public function setNom(?string $nom):void{
+        $this->nom = $nom;
+    }
+    public function getRoue():?int{
+        return $this->roue;
+    }
+    public function setRoue(?int $roue):void{
+        $this->roue = $roue;
+    }
+    public function getVitesse():?int{
+            return $this->vitesse;
+        }
+    public function setVitesse(?int $vitesse):void{
+        $this->vitesse = $vitesse;
+    }
 }
-
 ?>
+
+
+
 <!-- -Objet voiture (nomVehicule = « Mercedes CLK », nbrRoue = 4, vitesse 250),
 -Objet moto (nomVehicule = « Honda CBR », nbrRoue = 2, vitesse = 280), -->
